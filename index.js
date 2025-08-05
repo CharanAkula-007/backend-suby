@@ -8,7 +8,7 @@ const productRoutes = require('./routes/productRoutes');
 // const productRoutes = require('./routes/productRoutes');
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 3000;
 
 dotenv.config();
 mongoose.connect(process.env.MONGO_URI)
