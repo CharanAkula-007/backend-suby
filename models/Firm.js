@@ -13,13 +13,13 @@ const firmSchema = new mongoose.Schema({
     category:{
         type: [{
         type: String,
-        enum: ['vegetarian', 'non-vegetarian', 'vegan']
+        enum: ['veg', 'non-veg']
         }]
     },
     region: {
         type: [{
         type: String,
-        enum: ['north-indian', 'south-indian', 'chinese', 'italian', 'bakery', ]
+        enum: ['north-indian', 'south-indian', 'chinese', 'bakery', ]
         }]
     },
     offer:{

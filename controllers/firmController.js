@@ -49,4 +49,4 @@ const addFirm = async (req, res) => {
     return res.status(500).json({ message: "Server error" });
   }
 };
-module.exports = { addFirm: [upload.single("image"), addFirm] }; // 'image' is the field name in the form data
+module.exports = { addFirm, upload }; // 'image' is the field name in the form data
