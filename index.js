@@ -5,7 +5,6 @@ const vendorRoutes = require("./routes/vendorRoutes");
 const firmRoutes = require("./routes/firmRoutes");
 const productRoutes = require("./routes/productRoutes");
 const cors = require("cors");
-// const productRoutes = require('./routes/productRoutes');
 
 const app = express();
 const port = 3000;

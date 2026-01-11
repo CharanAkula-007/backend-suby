@@ -38,11 +38,12 @@ const addFirm = async (req, res) => {
     console.log("Firm data:", firm);
     // Save the firm to the database
     const savedFirm = await firm.save();
+    const firmId = savedFirm._id;
     console.log("Firm saved:", savedFirm);
     vendor.firm.push(savedFirm);
     await vendor.save();
 
-    res.status(201).json({ message: "Firm added successfully", firm });
+    res.status(201).json({ message: "Firm added successfully", firmId });
     console.log("Firm added successfully");
   } catch (error) {
     console.error(error);

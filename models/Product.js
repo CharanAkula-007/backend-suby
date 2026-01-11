@@ -15,7 +15,7 @@ const productSchema = new mongoose.Schema({
     type: [
         {
             type: String,
-            enum: ['Veg', 'Non-Veg', 'Vegan'],
+            enum: ['Veg', 'Non-Veg'],
             required: true
         }
     ]
